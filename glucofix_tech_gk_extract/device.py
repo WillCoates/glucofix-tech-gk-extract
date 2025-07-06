@@ -116,7 +116,7 @@ class Device:
                 minute=int(time[2:4], 10),
                 second=0
             )
-        except (ValueError, IndexError) as e:
+        except (ValueError, IndexError):
             raise ParseError(f"Invalid datetime format: '{date}' '{time}'")
 
     def _decode_reading(self, response: List[List[str]]) -> List[Reading]:

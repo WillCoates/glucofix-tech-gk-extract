@@ -1,6 +1,6 @@
 from unittest import TestCase
 from unittest.mock import Mock
-from glucofix_tech_gk_extract.device import Device, DeviceError, CrcError, Reading, ReadingType, Units, InvalidReadingError, ParseError
+from glucofix_tech_gk_extract.device import Device, CrcError, Reading, ReadingType, Units, InvalidReadingError, ParseError
 from serial import Serial
 from datetime import datetime
 
